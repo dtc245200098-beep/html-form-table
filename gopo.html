@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Gộp ô trong bảng</title>
+</head>
+<body>
+
+    <h2>Thời khóa biểu</h2>
+
+    <!-- Bước 2: Tạo bảng thời khóa biểu với ô gộp hàng và cột -->
+    <table border="1">
+        <!-- Dòng tiêu đề -->
+        <tr>
+            <th>Thứ</th>
+            <th>Môn học</th>
+            <th>Giáo viên</th>
+        </tr>
+        
+        <!-- Hàng 1 của Thứ Hai (Dùng rowspan="2" để gộp 2 hàng cho ô Thứ Hai) -->
+        <tr>
+            <td rowspan="2">Thứ Hai</td>
+            <td>Toán</td>
+            <td>Thầy Nam</td>
+        </tr>
+        
+        <!-- Hàng 2 của Thứ Hai (Không cần thêm ô "Thứ Hai" nữa vì đã gộp ở trên) -->
+        <tr>
+            <td>Văn</td>
+            <td>Cô Hạnh</td>
+        </tr>
+        
+        <!-- Hàng Thứ Ba (Dùng colspan="2" để gộp 2 cột Môn học và Giáo viên thành 1 ô) -->
+        <tr>
+            <td>Thứ Ba</td>
+            <td colspan="2">Nghỉ học</td>
+        </tr>
+    </table>
+
+</body>
+</html>
