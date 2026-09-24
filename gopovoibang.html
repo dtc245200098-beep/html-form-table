@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+    <style>
+        table {
+            width: 100%;
+            max-width: 650px;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #333333;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tiêu đề h1 theo đúng yêu cầu -->
+    <h1>Lịch họp công ty</h1>
+
+    <!-- Bảng hiển thị thông tin lịch họp -->
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Thứ Hai: Có 2 cuộc họp -> Dùng rowspan="2" ở cột Ngày -->
+            <tr>
+                <td rowspan="2">Thứ Hai (28/09)</td>
+                <td>08:00 - 09:30</td>
+                <td>Họp giao ban đầu tuần các Trưởng bộ phận</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:30</td>
+                <td>Họp phòng Marketing về Chiến dịch tháng 10</td>
+            </tr>
+
+            <!-- Thứ Ba: Cuộc họp kéo dài cả buổi -> Dùng colspan="2" ở cột Giờ & Nội dung -->
+            <tr>
+                <td>Thứ Ba (29/09)</td>
+                <td colspan="2">08:30 - 17:00: Hội thảo Đào tạo An toàn thông tin (Cả ngày)</td>
+            </tr>
+
+            <!-- Thứ Tư: Có 2 cuộc họp -> Dùng rowspan="2" ở cột Ngày -->
+            <tr>
+                <td rowspan="2">Thứ Tư (30/09)</td>
+                <td>09:00 - 10:30</td>
+                <td>Họp Demo sản phẩm mới với Khách hàng A</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:30</td>
+                <td>Họp R&D Đánh giá tiến độ dự án Alpha</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
